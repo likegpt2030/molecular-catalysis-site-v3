@@ -1,0 +1,325 @@
+/* 学科布局页面专用样式 */
+
+/* 页面标题 */
+.page-title {
+  background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fd 100%);
+  padding: 90px 0 30px;
+  margin-bottom: 40px;
+}
+
+.page-title h1 {
+  color: #0e3a7e;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.breadcrumbs {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.breadcrumbs a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+/* 学科布局和新闻侧栏容器 */
+.disciplines-layout {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+/* 学科内容区域 */
+.disciplines-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.discipline-card {
+  display: flex;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.discipline-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.discipline-icon {
+  flex: 0 0 120px;
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.discipline-icon img {
+  width: 60px;
+  height: 60px;
+  filter: brightness(0) invert(1);
+}
+
+.discipline-info {
+  flex: 1;
+  padding: 24px;
+}
+
+.discipline-info h3 {
+  color: #0e3a7e;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.discipline-info p {
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.discipline-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.discipline-features li {
+  position: relative;
+  padding-left: 20px;
+  color: #4b5563;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.discipline-features li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #3b82f6;
+}
+
+/* 新闻侧栏 */
+.news-sidebar {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.sidebar-header {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  color: #fff;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.view-all-link {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.view-all-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.news-flow {
+  padding: 15px;
+  max-height: 800px;
+  overflow-y: auto;
+}
+
+.news-item {
+  display: flex;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 15px 0;
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
+
+.news-date {
+  flex: 0 0 50px;
+  text-align: center;
+  margin-right: 15px;
+}
+
+.news-date .day {
+  display: block;
+  font-size: 22px;
+  font-weight: 700;
+  color: #3b82f6;
+}
+
+.news-date .month {
+  display: block;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.news-date .year {
+  display: block;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.news-content {
+  flex: 1;
+}
+
+.news-content h4 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #0e3a7e;
+}
+
+.news-content p {
+  margin: 0 0 10px;
+  color: #4b5563;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.read-more {
+  display: inline-block;
+  color: #3b82f6;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* 重点项目 */
+.key-projects {
+  background-color: #f8fafc;
+  padding: 60px 0 80px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.project-icon {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(59, 130, 246, 0.1);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.project-icon i {
+  font-size: 28px;
+  color: #3b82f6;
+}
+
+.project-card h3 {
+  color: #0e3a7e;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.project-card p {
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.project-status {
+  display: inline-block;
+  padding: 4px 12px;
+  background-color: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 20px;
+}
+
+/* 响应式样式 */
+@media (max-width: 992px) {
+  .disciplines-layout {
+    grid-template-columns: 1fr;
+  }
+  
+  .news-sidebar {
+    margin-top: 40px;
+  }
+  
+  .discipline-features {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .discipline-card {
+    flex-direction: column;
+  }
+  
+  .discipline-icon {
+    flex: auto;
+    height: 100px;
+    width: 100%;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .page-title {
+    padding: 80px 0 20px;
+  }
+}
