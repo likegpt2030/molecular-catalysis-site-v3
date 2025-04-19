@@ -1,0 +1,11 @@
+<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="100" fill="white"/>
+  <g transform="translate(20, 20)">
+    <circle cx="30" cy="30" r="28" fill="none" stroke="#00529b" stroke-width="2"/>
+    <text x="30" y="25" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#00529b">DICP</text>
+    <text x="30" y="40" font-family="Arial" font-size="10" text-anchor="middle" fill="#00529b">大连化物所</text>
+    <path d="M 70 10 L 160 10 L 160 50 L 70 50 Z" fill="none" stroke="#00529b" stroke-width="2"/>
+    <text x="115" y="25" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#00529b">DALIAN INSTITUTE OF</text>
+    <text x="115" y="40" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#00529b">CHEMICAL PHYSICS</text>
+  </g>
+</svg>

@@ -1,0 +1,114 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00529b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0077cc;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="500" fill="#f8f9fa"/>
+  
+  <!-- 实验室场景背景 -->
+  <rect x="50" y="50" width="700" height="400" fill="#e8f1fa" rx="10"/>
+  
+  <!-- 模拟的人物剪影 -->
+  <!-- 第一排 -->
+  <rect x="200" y="320" width="400" height="80" rx="5" fill="#00529b" opacity="0.9"/>
+  <!-- 人物1 -->
+  <circle cx="230" cy="320" r="30" fill="#00529b"/>
+  <rect x="210" y="320" width="40" height="60" fill="#00529b"/>
+  <!-- 人物2 -->
+  <circle cx="290" cy="320" r="30" fill="#00529b"/>
+  <rect x="270" y="320" width="40" height="60" fill="#00529b"/>
+  <!-- 人物3 -->
+  <circle cx="350" cy="320" r="30" fill="#00529b"/>
+  <rect x="330" y="320" width="40" height="60" fill="#00529b"/>
+  <!-- 人物4 -->
+  <circle cx="410" cy="320" r="30" fill="#00529b"/>
+  <rect x="390" y="320" width="40" height="60" fill="#00529b"/>
+  <!-- 人物5 -->
+  <circle cx="470" cy="320" r="30" fill="#00529b"/>
+  <rect x="450" y="320" width="40" height="60" fill="#00529b"/>
+  <!-- 人物6 -->
+  <circle cx="530" cy="320" r="30" fill="#00529b"/>
+  <rect x="510" y="320" width="40" height="60" fill="#00529b"/>
+  <!-- 人物7 -->
+  <circle cx="590" cy="320" r="30" fill="#00529b"/>
+  <rect x="570" y="320" width="40" height="60" fill="#00529b"/>
+  
+  <!-- 第二排 -->
+  <rect x="150" y="250" width="500" height="70" rx="5" fill="#00529b" opacity="0.8"/>
+  <!-- 人物1 -->
+  <circle cx="180" cy="250" r="25" fill="#00529b"/>
+  <rect x="165" y="250" width="30" height="50" fill="#00529b"/>
+  <!-- 人物2 -->
+  <circle cx="230" cy="250" r="25" fill="#00529b"/>
+  <rect x="215" y="250" width="30" height="50" fill="#00529b"/>
+  <!-- 人物3 -->
+  <circle cx="280" cy="250" r="25" fill="#00529b"/>
+  <rect x="265" y="250" width="30" height="50" fill="#00529b"/>
+  <!-- 人物4 -->
+  <circle cx="330" cy="250" r="25" fill="#00529b"/>
+  <rect x="315" y="250" width="30" height="50" fill="#00529b"/>
+  <!-- 人物5 -->
+  <circle cx="380" cy="250" r="25" fill="#00529b"/>
+  <rect x="365" y="250" width="30" height="50" fill="#00529b"/>
+  <!-- 人物6 -->
+  <circle cx="430" cy="250" r="25" fill="#00529b"/>
+  <rect x="415" y="250" width="30" height="50" fill="#00529b"/>
+  <!-- 人物7 -->
+  <circle cx="480" cy="250" r="25" fill="#00529b"/>
+  <rect x="465" y="250" width="30" height="50" fill="#00529b"/>
+  <!-- 人物8 -->
+  <circle cx="530" cy="250" r="25" fill="#00529b"/>
+  <rect x="515" y="250" width="30" height="50" fill="#00529b"/>
+  <!-- 人物9 -->
+  <circle cx="580" cy="250" r="25" fill="#00529b"/>
+  <rect x="565" y="250" width="30" height="50" fill="#00529b"/>
+  <!-- 人物10 -->
+  <circle cx="630" cy="250" r="25" fill="#00529b"/>
+  <rect x="615" y="250" width="30" height="50" fill="#00529b"/>
+  
+  <!-- 第三排 -->
+  <rect x="100" y="180" width="600" height="70" rx="5" fill="#00529b" opacity="0.7"/>
+  <!-- 做12个人物剪影 -->
+  <!-- 人物1-12 -->
+  <circle cx="130" cy="180" r="20" fill="#00529b"/>
+  <rect x="120" y="180" width="20" height="40" fill="#00529b"/>
+  <circle cx="170" cy="180" r="20" fill="#00529b"/>
+  <rect x="160" y="180" width="20" height="40" fill="#00529b"/>
+  <circle cx="210" cy="180" r="20" fill="#00529b"/>
+  <rect x="200" y="180" width="20" height="40" fill="#00529b"/>
+  <circle cx="250" cy="180" r="20" fill="#00529b"/>
+  <rect x="240" y="180" width="20" height="40" fill="#00529b"/>
+  <circle cx="290" cy="180" r="20" fill="#00529b"/>
+  <rect x="280" y="180" width="20" height="40" fill="#00529b"/>
+  <circle cx="330" cy="180" r="20" fill="#00529b"/>
+  <rect x="320" y="180" width="20" height="40" fill="#00529b"/>
+  <circle cx="370" cy="180" r="20" fill="#00529b"/>
+  <rect x="360" y="180" width="20" height="40" fill="#00529b"/>
+  <circle cx="410" cy="180" r="20" fill="#00529b"/>
+  <rect x="400" y="180" width="20" height="40" fill="#00529b"/>
+  <circle cx="450" cy="180" r="20" fill="#00529b"/>
+  <rect x="440" y="180" width="20" height="40" fill="#00529b"/>
+  <circle cx="490" cy="180" r="20" fill="#00529b"/>
+  <rect x="480" y="180" width="20" height="40" fill="#00529b"/>
+  <circle cx="530" cy="180" r="20" fill="#00529b"/>
+  <rect x="520" y="180" width="20" height="40" fill="#00529b"/>
+  <circle cx="570" cy="180" r="20" fill="#00529b"/>
+  <rect x="560" y="180" width="20" height="40" fill="#00529b"/>
+  <circle cx="610" cy="180" r="20" fill="#00529b"/>
+  <rect x="600" y="180" width="20" height="40" fill="#00529b"/>
+  <circle cx="650" cy="180" r="20" fill="#00529b"/>
+  <rect x="640" y="180" width="20" height="40" fill="#00529b"/>
+  
+  <!-- 实验室设备背景 -->
+  <rect x="100" y="100" width="200" height="80" rx="5" fill="#a72b2a" opacity="0.5"/>
+  <rect x="350" y="100" width="150" height="80" rx="5" fill="#a72b2a" opacity="0.5"/>
+  <rect x="550" y="100" width="170" height="80" rx="5" fill="#a72b2a" opacity="0.5"/>
+  
+  <!-- 文字标签 -->
+  <text x="400" y="450" font-family="Arial" font-size="18" text-anchor="middle" fill="#00529b" font-weight="bold">分子催化与原位表征研究组团队成员</text>
+  <text x="400" y="470" font-family="Arial" font-size="14" text-anchor="middle" fill="#00529b">中国科学院大连化学物理研究所</text>
+</svg>

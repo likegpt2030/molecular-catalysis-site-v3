@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- 分子节点和连接 -->
+  <g fill="none" stroke-width="2">
+    <!-- 分子原子节点 -->
+    <circle cx="60" cy="60" r="12" fill="#3b82f6" stroke="#3b82f6" />
+    <circle cx="30" cy="40" r="8" fill="#4f97ff" stroke="#4f97ff" />
+    <circle cx="80" cy="30" r="8" fill="#4f97ff" stroke="#4f97ff" />
+    <circle cx="90" cy="75" r="8" fill="#4f97ff" stroke="#4f97ff" />
+    <circle cx="45" cy="90" r="8" fill="#4f97ff" stroke="#4f97ff" />
+    
+    <!-- 催化(放射状)效果 -->
+    <circle cx="60" cy="60" r="18" stroke="rgba(59, 130, 246, 0.4)" stroke-dasharray="2 2" />
+    <circle cx="60" cy="60" r="24" stroke="rgba(59, 130, 246, 0.3)" stroke-dasharray="3 3" />
+    <circle cx="60" cy="60" r="32" stroke="rgba(59, 130, 246, 0.2)" stroke-dasharray="4 4" />
+    
+    <!-- 分子连接 -->
+    <line x1="60" y1="60" x2="30" y2="40" stroke="#3b82f6" />
+    <line x1="60" y1="60" x2="80" y2="30" stroke="#3b82f6" />
+    <line x1="60" y1="60" x2="90" y2="75" stroke="#3b82f6" />
+    <line x1="60" y1="60" x2="45" y2="90" stroke="#3b82f6" />
+    
+    <!-- 动态粒子效果 -->
+    <circle cx="37" cy="45" r="2" fill="#b6d4f6" />
+    <circle cx="74" cy="38" r="2" fill="#b6d4f6" />
+    <circle cx="82" cy="70" r="2" fill="#b6d4f6" />
+    <circle cx="50" cy="83" r="2" fill="#b6d4f6" />
+    <circle cx="55" cy="72" r="1.5" fill="#b6d4f6" />
+    <circle cx="65" cy="45" r="1.5" fill="#b6d4f6" />
+  </g>
+</svg>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景渐变 -->
+  <rect width="1920" height="1080" fill="url(#bgGradient)"/>
+  
+  <!-- 分子结构背景图案 -->
+  <g opacity="0.1">
+    <!-- 原子和分子键连接 -->
+    <circle cx="300" cy="400" r="20" fill="white"/>
+    <circle cx="500" cy="300" r="20" fill="white"/>
+    <circle cx="700" cy="450" r="20" fill="white"/>
+    <circle cx="900" cy="350" r="20" fill="white"/>
+    <circle cx="1100" cy="450" r="20" fill="white"/>
+    <circle cx="1300" cy="350" r="20" fill="white"/>
+    <circle cx="1500" cy="400" r="20" fill="white"/>
+    <circle cx="1700" cy="500" r="20" fill="white"/>
+    
+    <circle cx="400" cy="600" r="20" fill="white"/>
+    <circle cx="600" cy="700" r="20" fill="white"/>
+    <circle cx="800" cy="650" r="20" fill="white"/>
+    <circle cx="1000" cy="700" r="20" fill="white"/>
+    <circle cx="1200" cy="650" r="20" fill="white"/>
+    <circle cx="1400" cy="700" r="20" fill="white"/>
+    <circle cx="1600" cy="650" r="20" fill="white"/>
+    
+    <!-- 连接线 -->
+    <line x1="300" y1="400" x2="500" y2="300" stroke="white" stroke-width="3"/>
+    <line x1="500" y1="300" x2="700" y2="450" stroke="white" stroke-width="3"/>
+    <line x1="700" y1="450" x2="900" y2="350" stroke="white" stroke-width="3"/>
+    <line x1="900" y1="350" x2="1100" y2="450" stroke="white" stroke-width="3"/>
+    <line x1="1100" y1="450" x2="1300" y2="350" stroke="white" stroke-width="3"/>
+    <line x1="1300" y1="350" x2="1500" y2="400" stroke="white" stroke-width="3"/>
+    <line x1="1500" y1="400" x2="1700" y2="500" stroke="white" stroke-width="3"/>
+    
+    <line x1="400" y1="600" x2="600" y2="700" stroke="white" stroke-width="3"/>
+    <line x1="600" y1="700" x2="800" y2="650" stroke="white" stroke-width="3"/>
+    <line x1="800" y1="650" x2="1000" y2="700" stroke="white" stroke-width="3"/>
+    <line x1="1000" y1="700" x2="1200" y2="650" stroke="white" stroke-width="3"/>
+    <line x1="1200" y1="650" x2="1400" y2="700" stroke="white" stroke-width="3"/>
+    <line x1="1400" y1="700" x2="1600" y2="650" stroke="white" stroke-width="3"/>
+    
+    <line x1="300" y1="400" x2="400" y2="600" stroke="white" stroke-width="3"/>
+    <line x1="500" y1="300" x2="600" y2="700" stroke="white" stroke-width="3"/>
+    <line x1="700" y1="450" x2="800" y2="650" stroke="white" stroke-width="3"/>
+    <line x1="900" y1="350" x2="1000" y2="700" stroke="white" stroke-width="3"/>
+    <line x1="1100" y1="450" x2="1200" y2="650" stroke="white" stroke-width="3"/>
+    <line x1="1300" y1="350" x2="1400" y2="700" stroke="white" stroke-width="3"/>
+    <line x1="1500" y1="400" x2="1600" y2="650" stroke="white" stroke-width="3"/>
+  </g>
+  
+  <!-- 催化动态效果 - 光点 -->
+  <g>
+    <circle cx="400" cy="400" r="5" fill="url(#glowGradient)">
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="800" cy="350" r="5" fill="url(#glowGradient)">
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1200" cy="450" r="5" fill="url(#glowGradient)">
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1600" cy="400" r="5" fill="url(#glowGradient)">
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="4.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="500" cy="650" r="5" fill="url(#glowGradient)">
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="4.2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="900" cy="700" r="5" fill="url(#glowGradient)">
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="3.7s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1300" cy="600" r="5" fill="url(#glowGradient)">
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="3.5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  
+  <!-- 大型催化分子图形 -->
+  <g transform="translate(960, 540) scale(0.6)">
+    <!-- 中心金属原子 -->
+    <circle cx="0" cy="0" r="60" fill="url(#metalGradient)"/>
+    
+    <!-- 配体结构 -->
+    <g>
+      <!-- 配体1 -->
+      <line x1="0" y1="0" x2="200" y2="-200" stroke="url(#ligandGradient)" stroke-width="8"/>
+      <circle cx="200" cy="-200" r="30" fill="#5aaafa" opacity="0.8"/>
+      
+      <!-- 配体2 -->
+      <line x1="0" y1="0" x2="250" y2="50" stroke="url(#ligandGradient)" stroke-width="8"/>
+      <circle cx="250" cy="50" r="30" fill="#5aaafa" opacity="0.8"/>
+      
+      <!-- 配体3 -->
+      <line x1="0" y1="0" x2="100" y2="220" stroke="url(#ligandGradient)" stroke-width="8"/>
+      <circle cx="100" cy="220" r="30" fill="#5aaafa" opacity="0.8"/>
+      
+      <!-- 配体4 -->
+      <line x1="0" y1="0" x2="-180" y2="150" stroke="url(#ligandGradient)" stroke-width="8"/>
+      <circle cx="-180" cy="150" r="30" fill="#5aaafa" opacity="0.8"/>
+      
+      <!-- 配体5 -->
+      <line x1="0" y1="0" x2="-220" y2="-100" stroke="url(#ligandGradient)" stroke-width="8"/>
+      <circle cx="-220" cy="-100" r="30" fill="#5aaafa" opacity="0.8"/>
+    </g>
+    
+    <!-- 催化反应位点动画 -->
+    <circle cx="0" cy="0" r="90" fill="none" stroke="#fff" stroke-width="2" opacity="0.3">
+      <animate attributeName="r" values="90;120;90" dur="5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.3;0.1;0.3" dur="5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="0" cy="0" r="100" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.2">
+      <animate attributeName="r" values="100;140;100" dur="7s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.2;0.05;0.2" dur="7s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  
+  <!-- 定义渐变 -->
+  <defs>
+    <!-- 背景渐变 -->
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="1920" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00203d"/>
+      <stop offset="1" stop-color="#00529b"/>
+    </linearGradient>
+    
+    <!-- 金属原子渐变 -->
+    <radialGradient id="metalGradient" cx="0.5" cy="0.5" r="0.5" fx="0.4" fy="0.4">
+      <stop offset="0%" stop-color="#f5bd00"/>
+      <stop offset="100%" stop-color="#d05a00"/>
+    </radialGradient>
+    
+    <!-- 配体渐变 -->
+    <linearGradient id="ligandGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5eaeff"/>
+      <stop offset="100%" stop-color="#006fce"/>
+    </linearGradient>
+    
+    <!-- 发光渐变 -->
+    <radialGradient id="glowGradient" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#5eaeff"/>
+    </radialGradient>
+  </defs>
+</svg>

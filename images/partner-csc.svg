@@ -1,0 +1,9 @@
+<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="100" fill="white"/>
+  <g transform="translate(25, 15)">
+    <rect x="0" y="0" width="150" height="70" rx="5" fill="none" stroke="#00529b" stroke-width="2"/>
+    <text x="75" y="25" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#00529b">CSC</text>
+    <text x="75" y="45" font-family="Arial" font-size="12" text-anchor="middle" fill="#00529b">国家留学基金管理委员会</text>
+    <text x="75" y="60" font-family="Arial" font-size="8" text-anchor="middle" fill="#00529b">China Scholarship Council</text>
+  </g>
+</svg>

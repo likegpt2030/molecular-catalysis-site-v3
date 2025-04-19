@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分子催化与原位表征研究组 | 中国科学院大连化学物理研究所</title>
+    <meta name="description" content="中国科学院大连化学物理研究所分子催化与原位表征研究组致力于前沿催化科学研究，推动清洁能源和可持续发展">
+    <link rel="stylesheet" href="css/modern-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo-container">
+                    <img src="images/molecular-logo.svg" alt="分子催化Logo" class="logo">
+                    <h1 class="site-title">分子催化与原位表征研究组</h1>
+                </div>
+                
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <nav>
+                    <ul id="mainMenu">
+                        <li><a href="index.html" class="active">首页</a></li>
+                        <li><a href="research.html">研究方向</a></li>
+                        <li><a href="team.html">团队成员</a></li>
+                        <li><a href="publications.html">研究资源</a></li>
+                        <li><a href="news.html">新闻动态</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="language-switch">
+                    <a href="index.html" class="active">中文</a>
+                    <a href="en/index.html">English</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Dynamic Molecular Animation -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-subtitle">中国科学院大连化学物理研究所</span>
+                <h1>探索催化科学前沿<br>引领清洁能源未来</h1>
+                <p class="hero-description">我们致力于分子催化与原位表征研究，通过发现新催化原理和开发先进表征技术，推动能源转化和可持续发展</p>
+                <div class="hero-buttons">
+                    <a href="research.html" class="btn btn-primary">研究亮点</a>
+                    <a href="team.html" class="btn btn-secondary">认识团队</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-particles" id="particles-js"></div>
+    </section>
+
+    <!-- Research Highlights -->
+    <section class="research-highlights">
+        <div class="container">
+            <div class="section-header">
+                <h2>研究亮点</h2>
+                <p>我们的研究聚焦于分子催化科学关键科学问题</p>
+            </div>
+            <div class="highlights-grid">
+                <div class="highlight-item fade-in-up">
+                    <div class="highlight-icon">
+                        <img src="images/icon-catalysis.svg" alt="分子催化">
+                    </div>
+                    <h3>分子催化机理研究</h3>
+                    <p>设计高效催化剂，揭示催化反应机理，开发新的催化概念和方法论，推动催化科学理论创新</p>
+                    <a href="research.html#molecular-catalysis" class="read-more">了解更多</a>
+                </div>
+                <div class="highlight-item fade-in-up">
+                    <div class="highlight-icon">
+                        <img src="images/icon-insitu.svg" alt="原位表征">
+                    </div>
+                    <h3>先进原位表征技术</h3>
+                    <p>开发新型光谱和显微技术，实时观察反应条件下催化剂的演变过程，揭示催化活性物种结构-活性关系</p>
+                    <a href="research.html#in-situ" class="read-more">了解更多</a>
+                </div>
+                <div class="highlight-item fade-in-up">
+                    <div class="highlight-icon">
+                        <img src="images/icon-energy.svg" alt="能源转化">
+                    </div>
+                    <h3>能源转化催化</h3>
+                    <p>开发光催化与光电催化系统用于二氧化碳还原和高效太阳能利用，构建人工光合作用体系</p>
+                    <a href="research.html#energy" class="read-more">了解更多</a>
+                </div>
+                <div class="highlight-item fade-in-up">
+                    <div class="highlight-icon">
+                        <img src="images/icon-green.svg" alt="绿色化学">
+                    </div>
+                    <h3>绿色化学催化</h3>
+                    <p>发展环境友好的合成方法和可持续催化过程，用于污染控制和化学品清洁生产</p>
+                    <a href="research.html#green" class="read-more">了解更多</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section class="news-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>最新动态</h2>
+                <a href="news.html" class="view-all">查看全部</a>
+            </div>
+            <div class="news-grid">
+                <div class="news-item fade-in-up">
+                    <div class="news-date">2025-05-26</div>
+                    <h3>液相电荷成像揭示光激发电荷转移机理</h3>
+                    <p>我们团队开发了创新的液相电荷成像技术，成功分析了光激发电荷转移机理，为设计高效光催化材料提供了重要基础。</p>
+                    <a href="news/detail1.html" class="read-more">阅读更多</a>
+                </div>
+                <div class="news-item fade-in-up">
+                    <div class="news-date">2025-04-15</div>
+                    <h3>我组实现太阳能驱动光电催化高效再生NAD(P)H辅酶</h3>
+                    <p>研究团队开发了新型光电催化系统，实现NAD(P)H辅酶的高效再生，为生物催化与太阳能转化集成提供了新途径。</p>
+                    <a href="news/detail2.html" class="read-more">阅读更多</a>
+                </div>
+                <div class="news-item fade-in-up">
+                    <div class="news-date">2025-03-10</div>
+                    <h3>我组开发新型非现场电催化完全分解H2S制氢和硫技术</h3>
+                    <p>该技术实现了硫化氢的高效完全分解，不仅生产高纯度氢气，还回收了硫元素，具有重要环境和经济价值。</p>
+                    <a href="news/detail3.html" class="read-more">阅读更多</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section class="publications-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>最新论文</h2>
+                <a href="publications.html" class="view-all">查看全部</a>
+            </div>
+            <div class="publications-slider">
+                <div class="publication-item fade-in-up">
+                    <div class="publication-journal">Nature Catalysis</div>
+                    <h3>原位光谱揭示Cu/ZnO/Al₂O₃催化剂上CO2加氢制甲醇机理</h3>
+                    <p class="publication-authors">张杰, 陈思, 李翠, 王浩, 刘欣* (2025)</p>
+                    <a href="publications.html" class="publication-link">查看论文</a>
+                </div>
+                <div class="publication-item fade-in-up">
+                    <div class="publication-journal">JACS</div>
+                    <h3>单原子Ru催化剂设计用于高选择性CO2加氢制甲酸</h3>
+                    <p class="publication-authors">李辉, 王磊, 周明, 陈凯, 张静* (2025)</p>
+                    <a href="publications.html" class="publication-link">查看论文</a>
+                </div>
+                <div class="publication-item fade-in-up">
+                    <div class="publication-journal">Science Advances</div>
+                    <h3>液相原位TEM观察催化反应中贵金属纳米粒子的原子尺度动态演变</h3>
+                    <p class="publication-authors">黄旭, 吴强, 张思, 王鹏, 李成* (2024)</p>
+                    <a href="publications.html" class="publication-link">查看论文</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>研究团队</h2>
+                <a href="team.html" class="view-all">查看全部</a>
+            </div>
+            <div class="team-content">
+                <div class="team-photo fade-in-up">
+                    <img src="images/team-photo.svg" alt="研究团队合影">
+                </div>
+                <div class="team-description fade-in-up">
+                    <p>分子催化与原位表征研究组成立于2010年，隶属于中国科学院大连化学物理研究所。我们的团队由教授、副教授、博士后研究员和研究生组成，致力于探索催化科学前沿。</p>
+                    <p>目前，我们的团队有30多名成员，包括3名教授、5名副教授、4名助理教授、6名博士后研究员和20多名研究生。我们与国内外多所大学、研究机构和企业建立了广泛的合作关系。</p>
+                    <a href="team.html" class="btn btn-primary">认识我们的团队</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners">
+        <div class="container">
+            <div class="section-header">
+                <h2>合作伙伴</h2>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-item fade-in-up">
+                    <img src="images/partner-dicp.png" alt="中国科学院大连化学物理研究所">
+                </div>
+                <div class="partner-item fade-in-up">
+                    <img src="images/partner-cas.png" alt="中国科学院">
+                </div>
+                <div class="partner-item fade-in-up">
+                    <img src="images/partner-nsfc.png" alt="国家自然科学基金委员会">
+                </div>
+                <div class="partner-item fade-in-up">
+                    <img src="images/partner-sklc.png" alt="催化基础国家重点实验室">
+                </div>
+                <div class="partner-item fade-in-up">
+                    <img src="images/partner-lzu.png" alt="兰州大学">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <h3>关于我们</h3>
+                    <p>分子催化与原位表征研究组致力于基础催化研究与应用，重点关注清洁能源生产、温室气体转化和环境修复。</p>
+                </div>
+                <div class="footer-column">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="research.html">研究方向</a></li>
+                        <li><a href="team.html">团队成员</a></li>
+                        <li><a href="publications.html">论文发表</a></li>
+                        <li><a href="news.html">新闻动态</a></li>
+                        <li><a href="join.html">加入我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>联系方式</h3>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt"></i> 中国辽宁省大连市中山路457号，116023</p>
+                        <p><i class="fas fa-phone"></i> +86-411-84379000</p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:molecular-catalysis@dicp.ac.cn">molecular-catalysis@dicp.ac.cn</a></p>
+                    </address>
+                </div>
+                <div class="footer-column">
+                    <h3>关注我们</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="微信"><i class="fab fa-weixin"></i></a>
+                        <a href="#" aria-label="微博"><i class="fab fa-weibo"></i></a>
+                        <a href="#" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+                        <a href="#" aria-label="谷歌学术"><i class="fas fa-graduation-cap"></i></a>
+                    </div>
+                    <div class="qrcode">
+                        <img src="images/qrcode.png" alt="微信二维码">
+                        <p>关注我们的微信公众号</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 分子催化与原位表征研究组 - 中国科学院大连化学物理研究所 | 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top" id="backToTop" aria-label="回到顶部">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Particle.js for Dynamic Molecular Animation -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- JavaScript -->
+    <script>
+        // Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const mainMenu = document.getElementById('mainMenu');
+        
+        // 响应式导航展开/收起
+        if (menuToggle && mainMenu) {
+            const nav = menuToggle.closest('header').querySelector('nav');
+            menuToggle.addEventListener('click', () => {
+                nav.classList.toggle('open');
+                menuToggle.classList.toggle('active');
+                document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
+            });
+            // 点击菜单项或空白关闭菜单
+            nav.addEventListener('click', e => {
+                if (e.target.tagName === 'A' || e.target === nav) {
+                    nav.classList.remove('open');
+                    menuToggle.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+        }
+
+        // 粒子跟随鼠标动画交互
+        if (typeof particlesJS !== 'undefined') {
+            particlesJS('particles-js', {
+                particles: {
+                    number: { value: 80, density: { enable: true, value_area: 800 } },
+                    color: { value: "#b6d4f6" },
+                    shape: { type: "circle" },
+                    opacity: { value: 0.45, random: true },
+                    size: { value: 3, random: true },
+                    line_linked: {
+                        enable: true,
+                        distance: 150,
+                        color: "#b6d4f6",
+                        opacity: 0.25,
+                        width: 1.2
+                    },
+                    move: {
+                        enable: true,
+                        speed: 1.2,
+                        direction: "none",
+                        random: true,
+                        straight: false,
+                        out_mode: "out",
+                        attract: { enable: true, rotateX: 600, rotateY: 1200 }
+                    }
+                },
+                interactivity: {
+                    detect_on: "canvas",
+                    events: {
+                        onhover: { enable: true, mode: "grab" },
+                        onclick: { enable: true, mode: "push" },
+                        resize: true
+                    },
+                    modes: {
+                        grab: { distance: 180, line_linked: { opacity: 0.8 } },
+                        push: { particles_nb: 6 },
+                        bubble: { distance: 200, size: 12, duration: 1.2, opacity: 0.6 }
+                    }
+                },
+                retina_detect: true
+            });
+        }
+        
+        // Header Scroll Effect
+        const header = document.querySelector('header');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Back to Top
+        const backToTop = document.getElementById('backToTop');
+        
+        if (backToTop) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+            
+            backToTop.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+        
+        // Scroll Animation
+        const fadeElements = document.querySelectorAll('.fade-in-up');
+        
+        const fadeInOnScroll = () => {
+            fadeElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('visible');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', fadeInOnScroll);
+        window.addEventListener('load', fadeInOnScroll);
+        
+        // Particles.js Configuration for Molecular Animation
+        if (typeof particlesJS !== 'undefined') {
+            particlesJS('particles-js', {
+                particles: {
+                    number: { value: 80, density: { enable: true, value_area: 800 } },
+                    color: { value: "#b6d4f6" },
+                    shape: { type: "circle" },
+                    opacity: { value: 0.45, random: true },
+                    size: { value: 3, random: true },
+                    line_linked: {
+                        enable: true,
+                        distance: 150,
+                        color: "#b6d4f6",
+                        opacity: 0.22,
+                        width: 1
+                    },
+                    move: {
+                        enable: true,
+                        speed: 2,
+                        direction: "none",
+                        random: true,
+                        straight: false,
+                        out_mode: "out",
+                        bounce: false
+                    }
+                },
+                interactivity: {
+                    detect_on: "canvas",
+                    events: {
+                        onhover: { enable: true, mode: "grab" },
+                        onclick: { enable: true, mode: "push" },
+                        resize: true
+                    },
+                    modes: {
+                        grab: { distance: 140, line_linked: { opacity: 0.5 } },
+                        push: { particles_nb: 4 }
+                    }
+                },
+                retina_detect: true
+            });
+        }
+    </script>
+</body>
+</html>

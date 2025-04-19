@@ -1,0 +1,12 @@
+<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="100" fill="white"/>
+  <g transform="translate(25, 20)">
+    <path d="M 0 30 A 30 30 0 1 1 60 30 A 30 30 0 1 1 0 30" fill="none" stroke="#00529b" stroke-width="2"/>
+    <text x="30" y="35" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#00529b">CAS</text>
+    <text x="30" y="55" font-family="Arial" font-size="10" text-anchor="middle" fill="#00529b">中国科学院</text>
+    <path d="M 75 10 L 150 10 L 150 50 L 75 50 Z" fill="none" stroke="#00529b" stroke-width="2"/>
+    <path d="M 75 20 L 150 20" stroke="#00529b" stroke-width="1"/>
+    <text x="112" y="17" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#00529b">CHINESE ACADEMY</text>
+    <text x="112" y="35" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#00529b">OF SCIENCES</text>
+  </g>
+</svg>

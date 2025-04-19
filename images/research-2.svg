@@ -1,0 +1,72 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00529b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0077cc;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffcc00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff9900;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="600" height="400" fill="#f8f9fa"/>
+  
+  <!-- 太阳能电池板示意图 -->
+  <rect x="50" y="100" width="150" height="150" fill="#004488" opacity="0.8"/>
+  <line x1="50" y1="125" x2="200" y2="125" stroke="#ffffff" stroke-width="1"/>
+  <line x1="50" y1="150" x2="200" y2="150" stroke="#ffffff" stroke-width="1"/>
+  <line x1="50" y1="175" x2="200" y2="175" stroke="#ffffff" stroke-width="1"/>
+  <line x1="50" y1="200" x2="200" y2="200" stroke="#ffffff" stroke-width="1"/>
+  <line x1="50" y1="225" x2="200" y2="225" stroke="#ffffff" stroke-width="1"/>
+  <line x1="75" y1="100" x2="75" y2="250" stroke="#ffffff" stroke-width="1"/>
+  <line x1="100" y1="100" x2="100" y2="250" stroke="#ffffff" stroke-width="1"/>
+  <line x1="125" y1="100" x2="125" y2="250" stroke="#ffffff" stroke-width="1"/>
+  <line x1="150" y1="100" x2="150" y2="250" stroke="#ffffff" stroke-width="1"/>
+  <line x1="175" y1="100" x2="175" y2="250" stroke="#ffffff" stroke-width="1"/>
+  
+  <!-- 太阳 -->
+  <circle cx="125" cy="50" r="25" fill="url(#grad2)"/>
+  <line x1="125" y1="15" x2="125" y2="5" stroke="#ffcc00" stroke-width="2"/>
+  <line x1="125" y1="85" x2="125" y2="95" stroke="#ffcc00" stroke-width="2"/>
+  <line x1="90" y1="50" x2="80" y2="50" stroke="#ffcc00" stroke-width="2"/>
+  <line x1="160" y1="50" x2="170" y2="50" stroke="#ffcc00" stroke-width="2"/>
+  <line x1="100" y1="25" x2="93" y2="18" stroke="#ffcc00" stroke-width="2"/>
+  <line x1="150" y1="75" x2="157" y2="82" stroke="#ffcc00" stroke-width="2"/>
+  <line x1="100" y1="75" x2="93" y2="82" stroke="#ffcc00" stroke-width="2"/>
+  <line x1="150" y1="25" x2="157" y2="18" stroke="#ffcc00" stroke-width="2"/>
+  
+  <!-- 光电催化反应设备 -->
+  <rect x="250" y="100" width="100" height="150" rx="5" fill="#00529b" opacity="0.7"/>
+  <rect x="260" y="110" width="80" height="130" rx="3" fill="#e8f1fa"/>
+  <circle cx="300" cy="175" r="30" fill="#a72b2a" opacity="0.6"/>
+  <path d="M 280 175 Q 300 130, 320 175" stroke="#00529b" stroke-width="2" fill="none"/>
+  
+  <!-- 电极 -->
+  <rect x="290" y="145" width="5" height="60" fill="#333333"/>
+  <rect x="305" y="145" width="5" height="60" fill="#333333"/>
+  
+  <!-- 催化产物流向 -->
+  <path d="M 350 150 C 380 150, 380 100, 400 100" stroke="#00529b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 350 200 C 380 200, 380 250, 400 250" stroke="#00529b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- NAD(P)H辅酶示意图 -->
+  <rect x="400" y="75" width="150" height="50" rx="5" fill="#e8f1fa" stroke="#00529b" stroke-width="1"/>
+  <text x="415" y="105" font-family="Arial" font-size="14" fill="#00529b">NAD(P)H辅酶</text>
+  
+  <!-- 生物催化产物示意图 -->
+  <rect x="400" y="225" width="150" height="50" rx="5" fill="#e8f1fa" stroke="#00529b" stroke-width="1"/>
+  <text x="420" y="255" font-family="Arial" font-size="14" fill="#00529b">高价值生物产物</text>
+  
+  <!-- 电子转移路径 -->
+  <path d="M 125 250 C 125 300, 225 300, 225 250" stroke="#ffcc00" stroke-width="2" stroke-dasharray="4,2" fill="none"/>
+  <path d="M 225 250 L 250 250" stroke="#ffcc00" stroke-width="2" stroke-dasharray="4,2" fill="none"/>
+  
+  <!-- 定义箭头 -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#00529b"/>
+    </marker>
+  </defs>
+</svg>
