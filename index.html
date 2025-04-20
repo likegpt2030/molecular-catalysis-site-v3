@@ -6,6 +6,7 @@
     <title>分子催化与原位表征研究组 | 中国科学院大连化学物理研究所</title>
     <meta name="description" content="中国科学院大连化学物理研究所分子催化与原位表征研究组致力于前沿催化科学研究，推动清洁能源和可持续发展">
     <link rel="stylesheet" href="css/modern-style.css">
+    <link rel="stylesheet" href="css/news-ticker.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,13 +50,43 @@
     <!-- Hero Section with Dynamic Molecular Animation -->
     <section class="hero">
         <div class="container">
-            <div class="hero-content">
-                <span class="hero-subtitle">中国科学院大连化学物理研究所</span>
-                <h2 class="hero-heading">创新催化科学，推动可持续未来</h2>
-                <p class="hero-subtitle">致力于催化基础及应用研究，并致力于揭示催化剂结构与催化性能之间的本质关联。试图从原子、分子以及纳米尺度去理解催化作用的本质，进而将基础研究成果运用到涉及能源、精细化工以及环境生态等领域。</p>
-                <div class="hero-buttons">
-                    <a href="research.html" class="btn btn-primary">了解更多</a>
-                    <a href="disciplines.html" class="btn btn-secondary">学科布局</a>
+            <div class="hero-wrapper">
+                <div class="hero-content">
+                    <span class="hero-subtitle">中国科学院大连化学物理研究所</span>
+                    <h2 class="hero-heading">创新催化科学，推动可持续未来</h2>
+                    <p class="hero-subtitle">致力于催化基础及应用研究，并致力于揭示催化剂结构与催化性能之间的本质关联。试图从原子、分子以及纳米尺度去理解催化作用的本质，进而将基础研究成果运用到涉及能源、精细化工以及环境生态等领域。</p>
+                    <div class="hero-buttons">
+                        <a href="research.html" class="btn btn-primary">了解更多</a>
+                        <a href="disciplines.html" class="btn btn-secondary">学科布局</a>
+                    </div>
+                </div>
+                
+                <div class="news-ticker">
+                    <div class="news-ticker-header">
+                        <i class="fas fa-bullhorn"></i>
+                        <h3>最新通知</h3>
+                    </div>
+                    <div class="news-ticker-container">
+                        <div class="news-ticker-wrapper">
+                            <div class="news-ticker-item">
+                                <span class="news-date">2025-04-18</span>
+                                <a href="news.html" class="news-content">“催化前沿与未来能源”国际学术论坛将于6月在大连召开</a>
+                            </div>
+                            <div class="news-ticker-item">
+                                <span class="news-date">2025-04-15</span>
+                                <a href="news.html" class="news-content">李灿团队发表新型分子催化剂研究成果，被《Science》期刊接受</a>
+                            </div>
+                            <div class="news-ticker-item">
+                                <span class="news-date">2025-04-10</span>
+                                <a href="news.html" class="news-content">我组与美国加州大学伯克利分校建立联合实验室合作关系</a>
+                            </div>
+                            <div class="news-ticker-item">
+                                <span class="news-date">2025-04-05</span>
+                                <a href="news.html" class="news-content">2025年博士生招生简章发布，欢迎优秀学生加入</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="news.html" class="view-all-news">查看更多 <i class="fas fa-chevron-right"></i></a>
                 </div>
             </div>
         </div>
@@ -280,7 +311,8 @@
 
     <!-- Particle.js for Dynamic Molecular Animation -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
+    <script src="js/news-ticker.js"></script>
+    
     <!-- JavaScript -->
     <script>
         // Menu Toggle
