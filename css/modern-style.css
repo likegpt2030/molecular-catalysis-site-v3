@@ -405,18 +405,6 @@ nav a.active::after {
   margin-bottom: var(--space-md);
   position: relative;
   display: inline-block;
-  padding-left: var(--space-xl);
-}
-
-.hero-subtitle::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: var(--space-lg);
-  height: 1px;
-  background-color: var(--accent-blue);
-  transform: translateY(-50%);
 }
 
 .hero h1 {
