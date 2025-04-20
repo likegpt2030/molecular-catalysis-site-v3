@@ -1,4 +1,4 @@
-/* 新闻头条样式 */
+/* 新闻头条样式 - 科技风格版 */
 
 /* Hero区域包装器，用于并排显示内容和新闻头条 */
 .hero-wrapper {
@@ -11,34 +11,110 @@
 
 /* 新闻头条容器 */
 .news-ticker {
-  background-color: rgba(255, 255, 255, 0.95);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(243, 246, 255, 0.98) 100%);
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  max-height: 100%;
-  border: 1px solid #e6ecf3;
+  max-height: 340px; /* 限制高度，避免过高 */
+  border: 1px solid rgba(229, 231, 235, 0.8);
+  position: relative;
 }
 
-/* 新闻头条标题区域 */
-.news-ticker-header {
-  background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
-  color: white;
-  padding: 16px 20px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
+/* 科技风格装饰元素 - 浅色版 */
+.news-ticker::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #3b82f6, #06b6d4, #3b82f6);
+  background-size: 200% 100%;
+  animation: gradientShift 4s linear infinite;
 }
 
-.news-ticker-header i {
-  font-size: 20px;
+.news-ticker::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #3b82f6;
+  box-shadow: 0 0 6px rgba(59, 130, 246, 0.6);
+  animation: pulse 2s ease-in-out infinite;
 }
 
-.news-ticker-header h3 {
-  margin: 0;
-  font-size: 18px;
-  font-weight: 600;
+/* 装饰圆点 */
+.tech-dots {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  bottom: 0;
+  width: 30px;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.tech-dots::before,
+.tech-dots::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: #60a5fa;
+  border-radius: 50%;
+  animation: flickerIn 3s infinite alternate;
+}
+
+.tech-dots::before {
+  top: 25%;
+  right: 15px;
+  box-shadow: 0 0 8px rgba(96, 165, 250, 0.8);
+  animation-delay: 0.5s;
+}
+
+.tech-dots::after {
+  top: 75%;
+  right: 8px;
+  box-shadow: 0 0 8px rgba(96, 165, 250, 0.8);
+  animation-delay: 1.5s;
+}
+
+/* 装饰线条 */
+.tech-lines {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  pointer-events: none;
+}
+
+.tech-lines::before,
+.tech-lines::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, rgba(96, 165, 250, 0.5), transparent);
+  animation: dataStream 4s infinite;
+}
+
+.tech-lines::before {
+  left: 5px;
+  height: 30%;
+  top: 15%;
+  animation-delay: 0s;
+}
+
+.tech-lines::after {
+  left: 10px;
+  height: 20%;
+  top: 65%;
+  animation-delay: 2s;
 }
 
 /* 滚动新闻容器 */
@@ -46,37 +122,69 @@
   flex: 1;
   overflow: hidden;
   position: relative;
-  padding: 15px 0;
+  padding: 10px 0;
+  height: 280px; /* 固定高度确保全部可见 */
 }
 
 .news-ticker-wrapper {
-  height: 100%;
-  overflow-y: auto;
+  height: auto;
   padding: 0 20px;
-  scrollbar-width: thin;
-  scrollbar-color: #d1d5db transparent;
+  position: relative;
+  scrollbar-width: none;
+  overflow: visible;
+  animation: tickerScroll 30s linear infinite; /* 使用CSS动画实现滚动 */
+  animation-play-state: running;
+}
+
+/* 当鼠标悬停时暂停滚动 */
+.news-ticker-container:hover .news-ticker-wrapper {
+  animation-play-state: paused;
 }
 
 .news-ticker-wrapper::-webkit-scrollbar {
-  width: 6px;
+  display: none;
 }
 
-.news-ticker-wrapper::-webkit-scrollbar-track {
-  background: transparent;
+/* 垂直线装饰 */
+.news-ticker-wrapper::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, rgba(59, 130, 246, 0.5), transparent);
+  z-index: 1;
 }
 
-.news-ticker-wrapper::-webkit-scrollbar-thumb {
-  background-color: #d1d5db;
-  border-radius: 3px;
+/* 装饰点 */
+.news-ticker-container::after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 32px;
+  height: 2px;
+  background: rgba(59, 130, 246, 0.5);
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+  transform: rotate(45deg);
+}
+
+/* 缓慢循环滚动动画 */
+@keyframes tickerScroll {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); } /* 只需滚动一半高度，因为我们会复制内容 */
 }
 
 /* 单个新闻项目 */
 .news-ticker-item {
-  padding: 12px 0;
-  border-bottom: 1px solid #e6ecf3;
+  padding: 15px 5px 15px 20px;
+  border-bottom: 1px solid rgba(59, 130, 246, 0.15);
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s;
+  position: relative;
+  transition: all 0.3s ease;
+  margin-left: 5px;
 }
 
 .news-ticker-item:last-child {
@@ -84,29 +192,72 @@
 }
 
 .news-ticker-item:hover {
+  background: rgba(59, 130, 246, 0.07);
   transform: translateX(5px);
+}
+
+/* 科技元素: 数字线条 */
+.news-ticker-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 8px;
+  height: 1px;
+  background: rgba(59, 130, 246, 0.8);
+  transform: translateY(-50%);
 }
 
 .news-date {
   font-size: 13px;
   font-weight: 500;
   color: #3b82f6;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.news-date::before {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: #3b82f6;
+  border-radius: 50%;
+  margin-right: 8px;
+  box-shadow: 0 0 3px rgba(59, 130, 246, 0.5);
 }
 
 .news-content {
   color: #1f2937;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.5;
   display: block;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
-  transition: color 0.2s;
+  transition: all 0.2s;
+  position: relative;
+  padding-right: 15px;
 }
 
 .news-content:hover {
-  color: #3b82f6;
+  color: #60a5fa;
+}
+
+.news-content::after {
+  content: '→';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.news-content:hover::after {
+  opacity: 1;
+  right: 5px;
 }
 
 /* 查看更多链接 */
@@ -117,30 +268,113 @@
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
-  background-color: #f1f5fa;
-  transition: background-color 0.2s;
+  background: #f3f6ff;
+  border-top: 1px solid rgba(229, 231, 235, 0.8);
+  transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.view-all-news::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.7s ease;
 }
 
 .view-all-news:hover {
-  background-color: #e0eaff;
+  background: linear-gradient(90deg, rgba(59, 130, 246, 0.2), rgba(59, 130, 246, 0.4));
+  color: white;
+}
+
+.view-all-news:hover::before {
+  left: 100%;
 }
 
 .view-all-news i {
   font-size: 12px;
+  transition: transform 0.3s ease;
 }
 
-/* 自动滚动动画 */
-@keyframes tickerScroll {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(calc(-100% + 300px));
-  }
+.view-all-news:hover i {
+  transform: translateX(3px);
+}
+
+/* NEW和HOT标签样式 */
+.news-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  margin-left: 8px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.tag-new {
+  background-color: #ef4444;
+  color: white;
+  box-shadow: 0 2px 5px rgba(239, 68, 68, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.tag-new::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  animation: shine 2s infinite;
+}
+
+.tag-hot {
+  background-color: #f97316;
+  color: white;
+  box-shadow: 0 2px 5px rgba(249, 115, 22, 0.3);
+}
+
+/* 动画效果 */
+@keyframes gradientShift {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 200% 0%; }
+}
+
+@keyframes pulse {
+  0% { opacity: 0.4; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+  100% { opacity: 0.4; transform: scale(0.8); }
+}
+
+@keyframes flickerIn {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
+
+@keyframes shine {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* 数据流动画效果 - 用于装饰 */
+@keyframes dataStream {
+  0% { height: 5%; opacity: 0; }
+  50% { height: 30%; opacity: 0.7; }
+  100% { height: 5%; opacity: 0; }
 }
 
 /* 响应式样式 */
